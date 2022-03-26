@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+@keyframes animatedBackground {
+    /*from {background-position: 0 0;}
+    to {background-position: 100% 0;}*/
+    to {background-position: 1400px 0;}
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #444;
+    font-family: sans-serif;
+}
+
+ul{
+    padding-left: 0;
+}
+h1{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Source Code Pro', sans-serif;
+}
+a,a:visited{
+    color: #00ff00;
+}
+a:hover{
+    color: #00eb00;
+}
+section,header,footer{
+    width: 100%;
+}
+header{
+    background: #232323;
+}
+.sectionContent{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+}
+.logo{
+    padding: 20px 0;
+}
+
+.menu{
+    background: repeating-linear-gradient(45deg, rgb(0,255,0),rgb(0,255,0) 10px, rgb(0,235,0) 10px, rgb(0,235,0) 20px);
+    min-height: 85px;
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+nav ul, nav li{
+    display: inline-block;
+    line-height: 3em;
+    list-style: inside;
+}
+nav ul{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+nav li a, nav li a:visited{
+    color: #008000;
+    border: 3px solid #008000;
+    border-radius: 80px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: white;
+    background: orange;
+  }
+
+.contentBlock{
+    background: rgba(0,0,0,.23);
+    padding: 10px 40px;
+    margin:20px 20px 20px 0;
+    float: left;
+    max-width: 500px;
+    color: white;
+  }
+  .contentBlock img{
+    margin-left:-40px;
+    margin-top:-10px;
+    width:580px;
+  }
+
+  .treeLink{
+    background: #000;
+    background-image: url(https://www.jhuffmandesign.com/templates/band-news-template//images/joshua-tree.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    overflow: auto;
+  }
+
+  .jupiter{
+    background: #000;
+    background-image: url(https://www.jhuffmandesign.com/templates/band-news-template//images/jupiter-surface.jpg);
+    background-position: 0 0;
+    /*background-size: cover;*/
+    background-repeat: repeat-x repeat-y;
+    animation: animatedBackground 20s linear infinite reverse;
+    /*animation-direction: reverse;*/
+    box-sizing: content-box;
+    min-height: 600px;
+    overflow: auto;
+  }
+
+  .petrifiedForest{
+    background: #000;
+    background-image: url(https://www.jhuffmandesign.com/templates/band-news-template//images/petrified-forest.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    overflow: auto;
+  }
+  .divide {
+    height:50px;
+    clear: both;
+  }
+  
+  .greyStripes{
+    background: repeating-linear-gradient(-45deg, rgb(21,21,21),rgb(21,21,21) 10px, rgb(0,0,0) 10px, rgb(0,0,0) 20px);
+  }
+  .yellowStripes{
+    background: repeating-linear-gradient(45deg, rgb(255,204,0),rgb(255,204,0) 10px, rgb(228,183,0) 10px, rgb(228,183,0) 20px);
+  }
+
+  footer{
+    min-height: auto;
+    background: #232323;
+    color: white;
+  }
+  .footerContent{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 40px;
+  }
+  
+  
+  
+  .imgResponsive{
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 700px){
+    .contentBlock img{
+      max-width: 100%;
+      margin-left: inherit;
+      margin-top: inherit;
+    }
+    nav{
+      text-align: center;
+    }
+    .treeLink,.jupiter,.petrifiedForest {
+      background-attachment: scroll;
+    }
+  }
+  
